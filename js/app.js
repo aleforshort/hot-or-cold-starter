@@ -19,7 +19,7 @@ $(document).ready(function(){
     }
 
   	function startGame() { 
-      var userInput = $("#userGuess") .val();
+      
        if (userInput == randomNumber){
         $("#feedback").append("<h2>You win</h2>");
         }
@@ -38,6 +38,7 @@ $(document).ready(function(){
       }
 
       $(".guessBox").on("click", function(){
+        var userInput = $("#userGuess") .val();
         
         
 
